@@ -1,0 +1,27 @@
+.cart-item-wrapper {
+	border-bottom: 1px solid $orange;
+	padding: 10px 20px;
+
+	.cart-item {
+		display: flex;
+		justify-content: space-between;
+		color: $white;
+	}
+	h3 {
+		font-size: 18px;
+		color: $white;
+	}
+	.details,
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		color: $white;
+	}
+	img {
+		width: 100%;
+		object-fit: contain;
+		margin-left: 10px;
+		height: 80px;
+	}
+	
+}

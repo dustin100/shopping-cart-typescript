@@ -1,0 +1,55 @@
+.hero-image {
+	background: $white;
+	text-align: center;
+	background-image: url('https://www.fillmurray.com/375/500');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 500px;
+	width: 100%;
+
+	// Change main hero image based on screen size using mixins
+	@include small {
+		background-image: url('https://www.fillmurray.com/500/500');
+	}
+
+	@include medium {
+		background-image: url('https://www.fillmurray.com/768/500');
+	}
+	@include large {
+		background-image: url('https://www.fillmurray.com/1224/500');
+	}
+	@include x-large {
+		background-image: url('https://www.fillmurray.com/1440/500');
+	}
+	@include xx-large {
+		background-image: url('https://www.fillmurray.com/2560/500');
+	}
+
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+
+		h1 {
+			margin: 10px;
+			line-height: 1.3;
+			color: $white;
+		}
+
+		p {
+			color: $white;
+		}
+
+		.btn {
+			width: 100%;
+			margin-bottom: 30px;
+			align-self: center;
+			@include large {
+				width: 25%;
+			}
+		}
+	}
+}

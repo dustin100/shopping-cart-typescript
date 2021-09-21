@@ -1,0 +1,37 @@
+// Breakpoints
+// Using a mobile first approach. base scss starts at 375px
+@mixin small {
+	@media (min-width: 500px) {
+		@content;
+	}
+}
+@mixin medium {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin x-large {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin xx-large {
+	@media (min-width: 2560px) {
+		@content;
+	}
+}
+
+@mixin img-hover {
+	transition: opacity 0.3s ease-in-out;
+	&:hover,
+	&:focus {
+		opacity: 0.6;
+	}
+}
